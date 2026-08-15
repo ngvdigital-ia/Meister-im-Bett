@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#470303">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Altersprüfung — Meister im Bett</title>
+  <meta name="description" content="Kurze Altersprüfung, bevor du fortfährst. Nur für Erwachsene ab 18 Jahren.">
+
+  <link rel="dns-prefetch" href="https://cdn.utmify.com.br">
+
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      background:#470303;
+      color:#fff;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      -webkit-font-smoothing:antialiased;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px 20px;
+      text-align:center;
+    }
+
+    .quiz{width:100%;max-width:680px;margin:0 auto}
+
+    .quiz .headline{
+      font-size:40px;
+      line-height:1.25;
+      font-weight:800;
+      letter-spacing:-.01em;
+      text-transform:uppercase;
+      margin:0 0 40px;
+    }
+
+    .quiz .answers{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:16px;
+      max-width:420px;
+      margin:0 auto;
+    }
+
+    .quiz .answer{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      padding:20px 24px;
+      background:#fff;
+      color:#470303;
+      font-family:inherit;
+      font-size:20px;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.02em;
+      text-decoration:none;
+      border:2px solid #fff;
+      border-radius:8px;
+      cursor:pointer;
+      transition:transform .15s ease,opacity .2s ease;
+    }
+    .quiz .answer:hover{opacity:.92;transform:translateY(-1px)}
+    .quiz .answer:active{transform:translateY(0);opacity:1}
+
+    .quiz .answer--no{background:transparent;color:#fff}
+
+    .quiz .note{margin-top:32px;font-size:14px;line-height:1.6;color:rgba(255,255,255,.65)}
+
+    @media (max-width:640px){
+      .quiz .headline{font-size:28px;margin-bottom:32px}
+      .quiz .answer{font-size:18px;padding:18px 20px}
+      .quiz .note{font-size:13px}
+    }
+  </style>
+</head>
+<body>
+
+  <main class="quiz">
+
+    <h1 class="headline">Bist du über 18 Jahre alt?</h1>
+
+    <div class="answers">
+      <a href="/vsl2.0/" class="answer answer--yes" data-next>Ja</a>
+      <a href="/vsl2.0/" class="answer answer--no" data-next>Nein</a>
+    </div>
+
+    <p class="note">Nur für Erwachsene ab 18 Jahren.</p>
+
+  </main>
+
+  <!-- Mantém os parâmetros de tracking (UTMs) na troca de página -->
+  <script>
+    (function(){
+      var qs = window.location.search;
+      if(!qs) return;
+      var links = document.querySelectorAll('a[data-next]');
+      for(var i=0;i<links.length;i++){
+        links[i].setAttribute('href', links[i].getAttribute('href') + qs);
+      }
+    })();
+  </script>
+
+  <!-- Pixel UTMify (oferta meister-im-bett) -->
+  <script>
+    window.pixelId = "69ed30ef514da18c3e78318b";
+    var a = document.createElement("script");
+    a.setAttribute("async","");
+    a.setAttribute("defer","");
+    a.setAttribute("src","https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+  <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
+
+</body>
+</html>
